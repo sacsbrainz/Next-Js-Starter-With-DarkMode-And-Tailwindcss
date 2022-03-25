@@ -24,13 +24,11 @@ function Header() {
             return (<MoonIcon className='w-7 h-7' role='button' onClick={() => setTheme ('dark')}/>)}
     }
   return (
-    <div>
-        <header className='border-b border-gray-100 dark:border-gray-700'>
-            <div className='container mx-auto px-4 sm:px-6 py-4 flex justify-center items-center'>
-                {rendeThemeChanger()}
-            </div>
-        </header>
-    </div>
+    <header className='bg-white dark:bg-black  sticky top-0 z-50 dark:text-white dark:border-gray-700'>
+        <div className='container mx-auto px-4 sm:px-6 py-4 flex justify-center items-center'>
+            {rendeThemeChanger()}
+        </div>
+    </header>
   )
 }
 
